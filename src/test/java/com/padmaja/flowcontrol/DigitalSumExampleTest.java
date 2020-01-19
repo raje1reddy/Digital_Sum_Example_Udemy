@@ -39,7 +39,7 @@ public class DigitalSumExampleTest {
             DigitalSumExample digitalSumExample = new DigitalSumExample();
             int result = digitalSumExample.sumDigits(99);
             System.out.println(result);
-            int expectedresult = -1;
+            int expectedresult = 18;
             assertEquals(expectedresult,result);
         }
 
@@ -47,24 +47,24 @@ public class DigitalSumExampleTest {
     public void whileLoopExample_num999() {
         int result = digitalSumExample.sumDigits(999);
         System.out.println(result);
-        int expectedresult = -1;
+        int expectedresult = 27;
         assertEquals(expectedresult,result);
     }
 
 
-    @Test
+     @Test
     public void WhileLoopExample4_num0() {
         DigitalSumExample digitalSumExample = new DigitalSumExample();
         int result = digitalSumExample.sumDigits(0);
         System.out.println(result);
-        int expectedresult = 0;
+        int expectedresult = -1;
         assertEquals(expectedresult,result);
     }
     @Test
     public void whileLoopExample5_num9999() {
         int result = digitalSumExample.sumDigits(9999);
         System.out.println(result);
-        int expectedresult = -1;
+        int expectedresult = 36;
         assertEquals(expectedresult,result);
     }
 
@@ -72,7 +72,7 @@ public class DigitalSumExampleTest {
     public void whileLoopExample5_num99999() {
         int result = digitalSumExample.sumDigits(99999);
         System.out.println(result);
-        int expectedresult = -1;
+        int expectedresult = 45;
         assertEquals(expectedresult,result);
     }
 
@@ -81,7 +81,7 @@ public class DigitalSumExampleTest {
         DigitalSumExample digitalSumExample = new DigitalSumExample();
         int result = digitalSumExample.sumDigits(125);
         System.out.println(result);
-        int expectedresult = -1;
+        int expectedresult = 8;
         assertEquals(expectedresult,result);
     }
 
@@ -94,52 +94,32 @@ public class DigitalSumExampleTest {
         assertEquals(expectedresult,result);
     }
 
-
-  /*  public void whileLoopExample6_numnegative{
-        int result = digitalSumExample.sumDigits(-1);
+    @Test
+    public void WhileLoopExample4_negative() {
+        DigitalSumExample digitalSumExample = new DigitalSumExample();
+        int result = digitalSumExample.sumDigits(-0125);
         System.out.println(result);
         int expectedresult = -1;
         assertEquals(expectedresult,result);
     }
 
-    public void whileLoopExample7_numnegative11 {
-        int result = digitalSumExample.sumDigits(-9999999);
-        System.out.println(result);
-        int expectedresult = -10;
-        assertEquals(expectedresult,result);
-    }
-/*
     @Test
-    public void whileLoopExample8_numinvalid_false() {
-        int result = digitalSumExample.tablesExample(-99999999,false);
+    public void WhileLoopExample4_numlarge() {
+        DigitalSumExample digitalSumExample = new DigitalSumExample();
+        int result = digitalSumExample.sumDigits(32123);
         System.out.println(result);
-        int expectedresult = -100000006;
+        int expectedresult = 11;
         assertEquals(expectedresult,result);
     }
 
     @Test
-    public void whileLoopExample6_num00_false() {
-        int result = digitalSumExample.whileLoopExample2(0,true);
+    public void WhileLoopExample4_num() {
+        DigitalSumExample digitalSumExample = new DigitalSumExample();
+        int result = digitalSumExample.sumDigits(2147483647);
         System.out.println(result);
-        int expectedresult = -1;
+        int expectedresult = 46;
         assertEquals(expectedresult,result);
     }
-    @Test
-    public void whileLoopExample8_numinvalid1_false() {
-        int result = digitalSumExample.whileLoopExample2(-99999999,false);
-        System.out.println(result);
-        int expectedresult = -100000000;
-        assertEquals(expectedresult,result);
-    }
-
-
-    @Test
-    public void whileLoopExample7_numnegative1_true() {
-        int result = digitalSumExample.whileLoopExample2(-9,false);
-        System.out.println(result);
-        int expectedresult = -10;
-        assertEquals(expectedresult,result);
-    }*/
 
 }
 
